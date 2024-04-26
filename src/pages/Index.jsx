@@ -12,9 +12,9 @@ const Index = () => {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex flex-col sm:flex-row min-h-screen">
       {/* Login Section */}
-      <div className="w-1/2 flex flex-col justify-center items-center bg-gray-100 p-12">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center items-center bg-gray-100 p-12">
         <h1 className="text-4xl font-bold mb-6">Login</h1>
         <form className="w-full max-w-sm" onSubmit={handleLogin}>
           <div className="mb-4">
@@ -44,9 +44,9 @@ const Index = () => {
       </div>
 
       {/* Image Carousel Section */}
-      <div className="w-1/2">
+      <div className="w-full sm:w-1/2">
         <div className="h-full overflow-hidden">
-          <img className="w-full h-full object-cover transform scale-110 transition-transform duration-700 ease-in-out" src="https://images.unsplash.com/photo-1605908082539-2fa8664357c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzY2VuaWMlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzE0MTQwNjU1fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Scenic Landscape" />
+          <img className="w-full h-full object-cover transform scale-100 sm:scale-110 transition-transform duration-700 ease-in-out" src="https://images.unsplash.com/photo-1605908082539-2fa8664357c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzY2VuaWMlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzE0MTQwNjU1fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Scenic Landscape" />
         </div>
       </div>
     </div>
